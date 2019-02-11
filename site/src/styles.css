@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+    color: rgb(52, 140, 190);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[text], button {
+    color: rgb(102, 102, 102);
+    font-family: Cambria, Georgia;
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(52, 140, 190);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px #666;
+  }
+  
+  button:hover {
+    background-color: rgb(61, 159, 216);
+  }
+  
+  button:active {
+    background-color: rgb(61, 159, 216);
+    box-shadow: 0 0px #666;
+    transform: translateY(2px);
+  }
+  input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
