@@ -8,14 +8,7 @@ import { POSTS } from '../posts-storage';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
-  
-  message: Message = {
-    title: "Title",
-    img: "",
-    txt: "filler",
-    link: "none"
-  }
-
+  message: Message;
   posts = POSTS;
 
   constructor() { }
@@ -23,4 +16,7 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelect(message: Message): void {
+    message.open = !message.open;
+  }
 }

@@ -1,10 +1,12 @@
 <div class="paper">
   <div class="item" *ngFor="let message of posts">
-    <h2 style="text-align:center">{{message.title}}</h2>
-    <video width="100%" autoplay muted loop>
-      <source src={{message.img}} width="100%">
-    </video>
-    <pre>{{message.txt}}</pre>
-    <a href="https://www.w3schools.com/html/">{{message.link}}</a>
+    <h2 style="text-align:center" (click)="onSelect(message)">{{message.title}}</h2>
+    <div *ngIf="message.open">
+      <video width="100%" autoplay muted loop>
+        <source src={{message.img}} width="100%">
+      </video>
+      <pre>{{message.txt}}</pre>
+      <a href="https://www.w3schools.com/html/">{{message.link}}</a>
+    </div>
   </div>
 </div>

@@ -1,6 +1,8 @@
 .paper {
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    width:600px;
+    outline-style: solid;
+    outline-color: #CFD8DC;
+    outline-width: 1;
+    width:500px;
     margin:0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -11,5 +13,6 @@
 .item {
     border: solid;
     border-color: #CFD8DC;
-    border-width: 0 0 1px;
+    border-width: 0 0 2px;
+    background-color: rgba(233, 233, 233, 0);
 }

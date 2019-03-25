@@ -3,4 +3,5 @@ export class Message {
     img: string;
     txt: string;
     link: string;
+    open: boolean;
 }
